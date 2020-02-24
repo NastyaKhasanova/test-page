@@ -1,2 +1,2 @@
 # test-page
-test
+страничка "О себе" для курса Frontend Dev
