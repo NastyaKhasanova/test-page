@@ -307,4 +307,8 @@ footer {
   .page-header {
     margin-bottom: 30px;
   }
+
+  .block-title {
+    font-size: 24px;
+  }
 }
