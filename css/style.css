@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #070707;
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.page_section {
+  padding: 100px 25px;
+}
+
+.container {
+  max-width: 940px;
+  width: 100%;
+  margin: auto;
+}
+
+.color-block {
+  background: #F6F6F6;
+}
+
+.center {
+  text-align: center;
+}
