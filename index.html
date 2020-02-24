@@ -11,36 +11,120 @@
 <body>
   <header>
     <div class="container">
-      <nav></nav>
+      <nav class="menu">
+        <ul class="nav">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="toggle-nav">
+          <span class="bun"></span>
+          <span class="bun"></span>
+        </div>
+      </nav>
     </div>
   </header>
   <div class="main">
     <section class="page_section top_block">
       <div class="container">
         <div class="top_block_text">
-          <h1 class="page-header">Хасанова<br>Анастасия</h1>
+          <h1 class="page-header">Хасанова<br>Настя</h1>
           <div class="text">HTML-верстальщик<br>30 лет, Челябинск</div>
+        </div>
+        <div class="top-img" title="возьмите меня на курсы :)">
+          <img srcset="images/nastya-640w.jpg 640w,
+                       images/nastya-800w.jpg 800w"
+               sizes="(min-width: 280px) 640w,
+                      (min-width: 640px) 800w"
+               src="images/nastya-800w.jpg" alt="nastya">
         </div>
       </div>
     </section>
-    <section class="page_section about_block color-block center">
+    <section id="about" class="page_section about_block color-block center">
       <div class="container">
         <h2 class="block-title">Обо мне</h2>
+        <p>Привет, я Настя - HTML-верстальщик.<br>Прошла бесплатные курсы на Html academy, немного попрактиковалась<br> и пошла работать в студию по разработке сайтов.</p>
+        <p>В студии надеялась на ускоренное развитие,<br> но так получилось, что из верстальщиков я там была одна.</p>
+        <p>Мне нравится то, чем я занимаюсь. Но мне не хватает пинка,<br>чтобы начать развиваться во Frontend-разработке.</p>
       </div>
     </section>
-    <section class="page_section skills_block center">
+    <section id="skills" class="page_section skills_block center">
       <div class="container">
         <h2 class="block-title">Навыки</h2>
+        <div class="skills_list">
+          <div class="skills_list_item">
+            <div class="icon"><img src="images/html.png" alt="html"></div>
+            <div class="desc">Html</div>
+          </div>
+          <div class="skills_list_item">
+            <div class="icon"><img src="images/css.png" alt="css"></div>
+            <div class="desc">Css</div>
+          </div>
+          <div class="skills_list_item">
+            <div class="icon"><img src="images/jquery.png" alt="jquery"></div>
+            <div class="desc">JQuery</div>
+          </div>
+          <div class="skills_list_item">
+            <div class="icon"><img src="images/figma.png" alt="figma"></div>
+            <div class="desc">Figma</div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="page_section portfolio_block color-block center">
+    <section id="portfolio" class="page_section portfolio_block color-block center">
       <div class="container">
         <h2 class="block-title">Портфолио</h2>
+        <div class="portfolio_list">
+          <div class="portfolio_list_item">
+            <a href="https://sign.elf74.ru/" target="_blank">
+              <img loading="lazy" src="images/sign.jpg" alt="вывески">
+              <span>landing-page для вывесок</span>
+            </a>
+          </div>
+          <div class="portfolio_list_item">
+            <a href="https://oca-praga.cz/" target="_blank">
+              <img loading="lazy" src="images/oca.jpg" alt="association">
+              <span>Сайт с образовательными курсами Association</span>
+            </a>
+          </div>
+          <div class="portfolio_list_item">
+            <a href="https://intehprom.pro/" target="_blank">
+              <img loading="lazy" src="images/intech.jpg" alt="intehprom">
+              <span>landing-page для производства пресс-форм</span>
+            </a>
+          </div>
+          <div class="portfolio_list_item">
+            <a href="https://cordus.ru/" target="_blank">
+              <img loading="lazy" src="images/cordus.jpg" alt="cordus">
+              <span>Интернет магазин Cordus</span>
+            </a>
+          </div>
+          <div class="portfolio_list_item">
+            <a href="http://rework.su/" target="_blank">
+              <img loading="lazy" src="images/rework.jpg" alt="rework">
+              <span>landing-page для устройства наливных полов</span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="page_section contacts_block center">
+    <section id="contacts" class="page_section contacts_block center">
       <div class="container">
         <h2 class="block-title">Контакты</h2>
+        <p>Вы можете связаться со мной любым удобным способом</p>
+        <div class="btn-wrap">
+          <div class="tel-toggle" title="возьмите меня на курсы :)">
+            <span class="btn toggle-text">показать телефон</span>
+            <a href="tel:+79068663419" class="btn tel">89068663419</a>
+          </div>
+        </div>
+        <ul class="socials">
+          <li><a href="https://vk.com/nastja_bdst" target="_blank"><img src="images/vk.png" alt="vk"></a></li>
+          <li><a href="https://www.instagram.com/nastja_khasanova/?hl=ru" target="_blank"><img src="images/inst.png" alt="instagram"></a></li>
+          <li><a href="tg://resolve?domain=@HasanovaNastya"><img src="images/telegram.png" alt="telegram"></a></li>
+          <li><a href="https://wa.me/+79068663419"><img src="images/whatsapp.png" alt="whatsapp"></a></li>
+        </ul>
       </div>
     </section>
   </div>
@@ -49,6 +133,7 @@
       <p>Спасибо за внимание</p>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
